@@ -1,0 +1,3 @@
+# 运行时依赖（刻意保持极简）
+pypinyin>=0.50      # 声母/韵母/声调
+PyYAML>=6.0         # 读取 config/default.yaml

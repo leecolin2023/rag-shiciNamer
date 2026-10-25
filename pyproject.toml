@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shici-namer"
+version = "1.0.0"
+description = "从古典诗词摘词取名：2-gram 摘词 + 真实姓名库校验 + 平水韵音韵"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pypinyin>=0.50",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+shici-namer = "shici_namer.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

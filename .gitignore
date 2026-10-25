@@ -1,0 +1,19 @@
+# 数据（体积大，不入库）
+data/upstream/
+*.dat
+
+# 运行产物
+outputs/*
+!outputs/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# 编辑器/系统杂项
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
